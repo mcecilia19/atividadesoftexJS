@@ -11,6 +11,22 @@ let telefone = readline.question("Digite seu telefone: ")
 let cidade = readline.question("Digite sua cidade: ")
 let estado = readline.question("Digite seu estado: ")
 let profissao = readline.question("Digite sua profissão: ")
+let temAnimal = readline.question("Vc tem animal? (sim/não): ")
+let qtdAnimal = ""
+let maiorIdade = ""
+let calculoIdade = 2025 - parseInt(anoNasc)
+
+if (temAnimal == "sim") {
+    qtdAnimal = readline.question("Quantos animais vc tem? ")
+} else {
+    qtdAnimal = "Não tem animal"
+}
+
+if (calculoIdade >= 18) {
+    maiorIdade = "É maior de idade"
+} else {
+    maiorIdade = "É menor de idade"
+}
 
 console.log("\n-------------FORMULÁRIO----------------")
 console.log(`Nome: ${nome}`)
@@ -22,3 +38,6 @@ console.log(`Telefone: ${telefone}`)
 console.log(`Cidade: ${cidade}`)
 console.log(`Estado: ${estado}`)
 console.log(`Profissão: ${profissao}`)
+console.log(`Se tem animal: ${temAnimal}`)
+console.log(`Quantidade de animais: ${qtdAnimal}`)
+console.log(`Maior Idade: ${maiorIdade}`)
